@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .background{
+            background-color: white;
+            width: 500px;
+            height:700px;
+            margin: auto;
+
+            
+        }
+        .icon{
+            /* width: fit-content; */
+            width:50Px ;
+            height:50px;
+            background-color: black;
+            font-size: 40px;
+            color: white;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+           
+        }
+        .input{
+            padding: 110px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-bottom: 2px solid rgb(100, 97, 97);
+            outline: none;
+            
+        }
+        input[type="button"]{
+            width:300px;
+            height:50px;
+            margin-top:50px;
+            border-radius:30px ;
+            border: none;
+            background: linear-gradient(to right,aqua, rgb(80, 18, 226), violet);
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        
+
+        }
+        .input a {
+            text-decoration: none;
+            color: black;
+        }
+        .last {
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <h1 style="font-style:normal; text-align: center;">Welcome</h1>
+        <form action="#">
+            <div class=" icon">A</div>
+            
+                <div class="input">
+                    <input class="input100" type="text" name="name" placeholder="name">
+                    <span class="focus-input100" ></span>
+                    <br><br>
+                    <input class="input100" type="email" name="email" placeholder="Email">
+                    <span class="focus-input100" ></span>
+                    <br><br>
+                   
+                    <div class="wrap-input100 validate-input" validate="Enter password"></div>
+                    <input class="input100" type="password" name="pass" placeholder="Password">
+                    
+                    <input type="button" onclick="alert('Terimakasih')" value="SignUp">
+                    
+                    <div class="last">
+                        <span>Do you have an account? </span>
+                        <a href="login.html" target="_blank">Login </a>
+                    </div>
+                </div>
+                
+                
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>
